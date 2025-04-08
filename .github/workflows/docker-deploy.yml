@@ -26,11 +26,11 @@ jobs:
           context: ./backend  # Point to the backend directory
           file: ./backend/Dockerfile  # Ensure this is the correct Dockerfile location
           push: true
-          tags: yourusername/shopping-cart-backend:latest
+          tags: chalanis/shopping-cart-backend:latest
 
       - name: Build and push frontend
         uses: docker/build-push-action@v5
         with:
           context: ./frontend
           push: true
-          tags: yourusername/shopping-cart-frontend:latest
+          tags: chalanis/shopping-cart-frontend:latest
