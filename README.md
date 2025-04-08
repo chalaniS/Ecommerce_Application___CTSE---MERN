@@ -28,10 +28,10 @@ A secure microservice backend built using the **MERN stack** (MongoDB, Express.j
 
 #Team members:
 
-| Name                | Registration No | Batch            |
+| Name                | Registration No | Personal Email            |
 |---------------------|-----------------|------------------|
-| Rajapaksha C. S.    | IT21377280      | Y3.S2.SE.WE.1.1 |
-| Rajapaksha C. S.    | IT21377280      | Y3.S2.SE.WE.1.1 |
-| Rajapaksha C. S.    | IT21377280      | Y3.S2.SE.WE.1.1 |
-| Rajapaksha C. S.    | IT21377280      | Y3.S2.SE.WE.1.1 |
+| Rajapaksha C. S.    | IT21377280      | chalasaumya@gmail.com |
+| Rajapaksha C. S.    | IT21377280      | chalasaumya@gmail.com |
+| Rajapaksha C. S.    | IT21377280      | chalasaumya@gmail.com |
+| Rajapaksha C. S.    | IT21377280      | chalasaumya@gmail.com |
 
