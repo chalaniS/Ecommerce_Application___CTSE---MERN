@@ -1,6 +1,4 @@
-# .github/workflows/docker-deploy.yml
 name: Docker CI
-
 
 on:
   push:
@@ -25,7 +23,8 @@ jobs:
       - name: Build and push backend
         uses: docker/build-push-action@v5
         with:
-          context: ./backend
+          context: ./backend  # Point to the backend directory
+          file: ./backend/Dockerfile  # Ensure this is the correct Dockerfile location
           push: true
           tags: yourusername/shopping-cart-backend:latest
 
