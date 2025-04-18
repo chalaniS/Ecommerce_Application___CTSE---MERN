@@ -2,14 +2,16 @@ name: Docker CI
 
 on:
   push:
-    branches: master
+    branches: 
+      - master
 
 jobs:
   docker:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -23,15 +25,15 @@ jobs:
       - name: Build and push backend
         uses: docker/build-push-action@v5
         with:
-          context: ../backend  # Point to the backend directory
-          file: ./backend/Dockerfile  # Ensure this is the correct Dockerfile location
+          context: ./backend            
+          file: ./backend/Dockerfile    
           push: true
           tags: chalanis/shopping-cart-backend:latest
 
       - name: Build and push frontend
         uses: docker/build-push-action@v5
         with:
-          context: ../frontend
-          file: ./frontend/Dockerfile
+          context: ./frontend           
+          file: ./frontend/Dockerfile   
           push: true
           tags: chalanis/shopping-cart-frontend:latest
