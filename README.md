@@ -20,11 +20,11 @@ A secure microservice backend built using the **MERN stack** (MongoDB, Express.j
 ## 🧰 Tech Stack
 
 - **Backend:** Node.js, Express.js
-- **Database:** MongoDB (via MongoDB Atlas or local)
+- **Database:** MongoDB (via MongoDB Atlas)
 - **Authentication:** JWT & bcrypt
 - **Containerization:** Docker
 - **CI/CD:** GitHub Actions
-- **Cloud Deployment:** Azure Container Apps / AWS ECS (optional)
+- **Cloud Deployment:** Azure Container Apps
 
 #Team members:
 
