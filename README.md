@@ -1,4 +1,4 @@
-# 🛒 Shopping Cart Microservice with Authentication (MERN Stack)
+# 🛒 Shopping Cart Microservice with Authentication (MERN-Stack)
 
 A secure microservice backend built using the **MERN stack** (MongoDB, Express.js, React, Node.js) that provides shopping cart functionality with user authentication.
 
