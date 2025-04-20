@@ -30,7 +30,7 @@ A secure microservice backend built using the **MERN stack** (MongoDB, Express.j
 
 | Name                | Registration No | Personal Email            |
 |---------------------|-----------------|------------------|
-| Rajapaksha C. S.    | IT21377280      | chalasaumya@gmail.com |
+| Kumaravithana D. B.    | IT21342608      | IT21342608@my.sliit.com |
 | Rajapaksha C. S.    | IT21377280      | chalasaumya@gmail.com |
 | Rajapaksha C. S.    | IT21377280      | chalasaumya@gmail.com |
 | Rajapaksha C. S.    | IT21377280      | chalasaumya@gmail.com |
