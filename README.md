@@ -33,5 +33,5 @@ A secure microservice backend built using the **MERN stack** (MongoDB, Express.j
 | Kumaravithana D. B. | IT21342608      | IT21342608@my.sliit.com        |
 | Rajapaksha C. S.    | IT21377280      | chalasaumya@gmail.com          |
 | Sandeepani A. W. S  | IT21173004      | savindyasandeepani09@gmail.com |
-| Rajapaksha C. S.    | IT21377280      | chalasaumya@gmail.com          |
+| Padukka P.D.M.D     | IT21277504      | madukadilshan32@gmail.com      |
 
