@@ -28,20 +28,25 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        working-directory: ./client
+        working-directory: ./frontend
         run: npm ci
 
       - name: Run Jest tests
-        working-directory: ./client
+        working-directory: ./frontend
         run: |
-          # ensure xml reporter is installed
           npm install --no-save jest-junit
-          # run tests and output JUnit report
-          npm test -- --watchAll=false --reporters=default --reporters=jest-junit
+          npm test -- --watchAll=false --coverage --reporters=default --reporters=jest-junit
 
       - name: Upload Jest test results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: jest-results
-          path: client/test-results.xml
+          path: frontend/test-results.xml
+
+      - name: Upload test coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jest-coverage
+          path: frontend/coverage
