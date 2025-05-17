@@ -1,0 +1,40 @@
+# Node modules
+node_modules
+**/node_modules
+
+# Build output
+dist
+build
+
+# Logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Git and Docker
+.git
+.gitignore
+.dockerignore
+
+# Tests and coverage
+coverage
+__tests__
+*.test.js
+
+# IDE/editor folders
+.vscode
+.idea
+
+# Others
+*.swp
+*.bak

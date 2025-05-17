@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: shopping-cart-backend
+    ports:
+      - "2060:2060"
+    environment:
+      - MONGO_URI=mongodb+srv://chalasaumya:1OKkvx7et6bluhWF@easytrolley.a2q3n6v.mongodb.net/shoppingcart?retryWrites=true&w=majority
+      - JWT_SECRET=shopping-cart-1112
+    restart: always
+
+  frontend:
+    build: ./frontend
+    container_name: shopping-cart-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: always
+    
