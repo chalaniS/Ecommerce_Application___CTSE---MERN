@@ -12,7 +12,7 @@ on:
 
 jobs:
   test:
-    name: Install & Run Frontend Tests
+    name: Install & Run Frontend Tests in Docker
     runs-on: ubuntu-latest
     env:
       CI: true
@@ -21,32 +21,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Node.js 18.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-          cache: 'npm'
-
-      - name: Install dependencies
-        working-directory: ./frontend
-        run: npm ci
-
-      - name: Run Jest tests
-        working-directory: ./frontend
+      - name: Run frontend tests inside Docker
         run: |
-          npm install --no-save jest-junit
-          npm test -- --watchAll=false --coverage --reporters=default --reporters=jest-junit
-
-      - name: Upload Jest test results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: jest-results
-          path: frontend/test-results.xml
-
-      - name: Upload test coverage
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: jest-coverage
-          path: frontend/coverage
+          docker build -t frontend-test ./frontend
+          docker run --rm frontend-test npm test -- --watchAll=false
