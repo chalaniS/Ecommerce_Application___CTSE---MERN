@@ -1,4 +1,3 @@
-
 # 🛒 MERN E-commerce Application
 
 This is a microservice-based e-commerce application built using the **MERN** stack (MongoDB, Express.js, React.js, Node.js). It includes modular services for products, users, and orders, and is containerized using Docker, deployed to **Azure Container Apps**, and managed with a full **CI/CD pipeline via GitHub Actions**.
@@ -91,6 +90,15 @@ on:
 | `DOCKER_PASSWORD`              | Docker Hub token/password          |
 | `AZURE_WEBAPP_PUBLISH_PROFILE` | Azure publish profile (Base64 XML) |
 
+----
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (via MongoDB Atlas)
+- **Authentication:** JWT & bcrypt
+- **Containerization:** Docker
+- **CI/CD:** GitHub Actions
+- **Cloud Deployment:** Azure Container Apps
+
+
 ---
 
 ## ☁️ Azure Deployment
@@ -149,5 +157,15 @@ The app is deployed on **Azure Container Apps**, with container-level scaling an
    ```
 
 ---
+=======
+| Name                | Registration No | Personal Email                 |
+|---------------------|-----------------|--------------------------------|
+| Kumaravithana D. B. | IT21342608      | IT21342608@my.sliit.com        |
+| Rajapaksha C. S.    | IT21377280      | chalasaumya@gmail.com          |
+| Sandeepani A. W. S  | IT21173004      | savindyasandeepani09@gmail.com |
+| Padukka P.D.M.D     | IT21277504      | madukadilshan32@gmail.com      |
+
 
 ## 📷 Screenshots
+
+
