@@ -33,6 +33,7 @@ const Header = () => {
           className="font-extrabold text-[26px] cursor-pointer tracking-wide sm:tracking-widest"
         >
           Ali express
+          
         </h2>
       </div>
       <div className="hidden sm:block">
